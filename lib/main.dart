@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:route/route/routes.gr.dart';
+import 'package:route/page_one.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,10 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Materaia app',
-      // home: PageOne(),
-      initialRoute: MyRoute.pageOne,
-      onGenerateRoute: MyRoute.onGenerateRoute,
-      navigatorKey: MyRoute.navigatorKey,
+      home: ExampleWidget(),
     );
   }
 }
